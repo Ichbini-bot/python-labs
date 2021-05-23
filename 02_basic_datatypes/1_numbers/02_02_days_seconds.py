@@ -9,5 +9,16 @@ NOTE: We will use the input() funtion to collect users input. An example is demo
 # the input of the user will be saved in the variable days.
 # because the input() function collects the input as a string, we have to convert it to an int
 # The string passed to the input() function is what the user is prompted with
+
+# Formula for days in seconds / how many seconds a day has: 60*60*24 seconds
+
 days = int(input("Please enter a number in days between 1 and 1,000,000,000: "))
+
+seconds = 60 * 60 * 24 # or just put in 86400...
+
+seconds_per_days = days * seconds
+
+print(seconds_per_days)
+
+
 
