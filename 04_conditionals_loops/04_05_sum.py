@@ -7,3 +7,12 @@ The output of your calculation should therefore look like this:
 
 The sum is: 5050
 '''
+lower = int(input("pls enter lower number: "))
+upper = int(input("pls enter upper number: "))
+
+total = 0
+
+for num in range(lower, upper+1):
+    total = total + num
+
+print(total)

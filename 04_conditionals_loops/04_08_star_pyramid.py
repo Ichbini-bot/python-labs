@@ -17,3 +17,14 @@ Another example: if input is 3, you will output
 Hint: Think of nested for loops
 
 '''
+num = int(input("pls enter number: "))
+
+for n in range(1, num +1):
+    star = n*"* "
+    print(star)
+
+
+for i in range(0, num):
+    for j in range(0, i+1):
+        print("* ", end="")
+    print("\r")

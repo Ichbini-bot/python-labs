@@ -8,3 +8,12 @@ Use a loop to print the following table to the console:
  40 41 42 43 44 45 46 47 48 49
 
 '''
+   
+counter = 0
+
+for table in range(0, 5):
+    for num in range(counter, counter+10):
+        print(num, end=" ")
+    print(end="\n")
+    counter = num +1   
+
