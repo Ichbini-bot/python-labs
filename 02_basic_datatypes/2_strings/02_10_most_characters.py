@@ -23,12 +23,32 @@ third = str(input("Pls enter a word or sentence: "))
 first_len, second_len, third_len = len(first), len(second), len(third)
 
 # Cant get rid of the indent before the comma... (4 , "len" vs. 4, "len")
+'''
+print(str(first_len) + ", " + first)
+print(str(second_len) + ", " + second)
+print(str(third_len) + ", " + third)
+'''
 
-print(first_len, ",", first)
-print(second_len, ",", second)
-print(third_len, ",", third)
+# no clear result if words have same num count (prints the first one)
 
-# no clear result if words have same num count (prints the firs one)
+max_len = first_len
+max_word = first
+
+if second_len >= max_len:
+    max_len = second_len
+    max_word = second
+if third_len >= max_len:
+    max_len = third_len
+    max_word = third
+print(max_word, max_len)
+
+if first_len > second_len and first_len > third_len:
+    print(first_len, first)
+elif second_len > third_len and second_len > first_len:
+    print(second_len, second)
+else:
+    print(third_len, third)
+
 if first_len >= second_len:
     print(first_len,",", first)
 elif second_len >= third_len:

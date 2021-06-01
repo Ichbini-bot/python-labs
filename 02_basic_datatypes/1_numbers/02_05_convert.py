@@ -20,7 +20,7 @@ y = int(x)
 print(y)
 # info loss, as Python rounds the float to the next lower figure (40.5 vs 40) => did expect 41...
 
-x = 3.0 // 2
+x = 3 // 2
 print(x)
 # implicit conversion from int to float. however, from logical point of view not needed as only ints are considered through // operator
 
