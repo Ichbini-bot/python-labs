@@ -6,3 +6,16 @@ user_input = "hello"
 result = {"h": 1, "e": 1, "l": 2, "o": 1}
 
 '''
+
+data = input("pls enter a sentence: ")
+# Remove spaces between words
+data_stripped = data.replace(" ", "")
+print(data_stripped)
+
+# empty dictionnary
+dictionnary = dict()
+
+for char in data_stripped:
+    dictionnary[char] = data_stripped.count(char)
+
+print(dictionnary)
