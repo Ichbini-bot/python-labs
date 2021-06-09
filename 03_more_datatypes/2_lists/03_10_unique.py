@@ -10,9 +10,6 @@ list = [1, 2, 6, 55, 2, 'hi', 4, 6, 1, 13]
 
 unique_list = []
 
-for x in list:
-    print(list.count(x))
-
 
 for x in list:
     if list.count(x) < 2:

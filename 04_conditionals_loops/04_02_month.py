@@ -4,7 +4,16 @@ Take in a number from the user and print "January", "February", ...
 or other respectively. Use a "nested-if" statement.
 
 '''
+user_input = int(input("pls enter num between 1 to 12: "))
 
+month = {1 : "January", 2 : "February", 3 : "March", 4 : "April", 5 : "May", 6 : "June", 7 : "July", 8 : "August", 9 : "September", 10 : "October", 11 : "November", 12 : "December"}
+
+if user_input >= 1 and user_input <= 12:
+    print(month[user_input])
+else:
+    print("sry, need a num between 1 to 12")
+
+'''
 data = int(input("pls enter num between 1 to 12: "))
 
 if data >= 1 and data <= 12:
@@ -34,3 +43,4 @@ if data >= 1 and data <= 12:
         print("December")
 else:
     print("sry, need a num between 1 to 12")
+'''

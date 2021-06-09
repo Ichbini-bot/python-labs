@@ -25,3 +25,10 @@ office = [
     {"full_name": "Creed Bratton", "item": "mung beans"},
     {"full_name": "Darryl Philbin", "item": "forklift"},
 ]
+
+for entry in office:
+    if entry['full_name']:                          # ?????????????????????new to me to access a dict like that....????
+        first_last = entry['full_name'].split()
+        last_name = first_last[-1].upper()
+        first_name = first_last[0]                  # doesnt work for Edsger W. Dijkstra...
+    print(f"{last_name}, {first_name} {entry['item']:>30}")

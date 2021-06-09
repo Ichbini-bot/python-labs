@@ -26,25 +26,27 @@ if x %2 == 1:
     list.append(0)
     print("as we need an even list for this program, the value 0 hast been appended: ", list)
 
+for i in range (0, len(list), 2):
+    tupe = tuple(list[i:i+2:1])
+    print(tupe)
 
-counter1 = 0
-counter2 = 2
+new_list = []
 
-for i in range (0, len(list)):
+for i in range(0, len(list), 2):
+    sublist = []
+    sublist.append(list[i:i+2], 2)
+    new_list.append(tuple(sublist))
+
+print(new_list)
+
+'''
+for i in range (0, len(list), 2):  
     new_list = []
-    for i in range(counter1, counter2): 
-            new_list.append(list[i])
+    new_list.append(list[i])
+    new_list.append(list[i+1])
     tupe = tuple(new_list)
     print(tupe)
-    counter1 += 2
-    counter2 += 2
-    if counter2 > len(list):
-        break
-    '''
-    not needed
-    else:
-        continue
-    '''
+'''  
 
 
 

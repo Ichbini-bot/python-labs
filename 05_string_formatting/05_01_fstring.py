@@ -18,3 +18,17 @@ famous_quotes = [
     {"full_name": "Nathan Myhrvold", "quote": "Software is a gas; it expands to fill its container."},
     {"full_name": "Alan Bennett", "quote": "Standards are always out of date.  That’s what makes them standards."}
 ]
+
+#print(famous_quotes[0]["full_name"])
+
+
+
+for entry in famous_quotes:
+    if entry['full_name']:                          # ?????????????????????new to me to access a dict like that....????
+        first_last = entry['full_name'].split()
+        last_name = first_last[-1]
+        first_name = " ".join(first_last[0:len(first_last)-1])               # doesnt work for Edsger W. Dijkstra...
+    print(f"{entry['quote']} - {last_name}, {first_name}")
+
+#print(f"{item['quote']} - {item['full_name']}")
+      
