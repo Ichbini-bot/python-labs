@@ -6,23 +6,35 @@ Print these values to the console when calling the function.
 
 example_list = [1, 2, 3, 4, 5, 6, 7]
 
-def stats(example_list): #only one return statement per function!
-  min = example_list[0]
+def stats(example_list): #only one return statement per function?
+  minimum = min(example_list)
   
-  maxi = example_list[-1]
+  maxi = max(example_list)
   
+  summary = sum(example_list)
+  '''
   sum = 0
   for i in example_list:
     sum += i
+  '''
   
-  average = sum / 7
+  average = summary / len(example_list)
   
-  return min, maxi, average, sum
+  return minimum, maxi, average, summary #returns a tuple
 
 # call the function below here
-print(stats(example_list)) #prints a tuple - is there a possibility to access f.e. the min only???
+minimum, maximum, average, summmary = stats(example_list)
 
+print(minimum)
+print(maximum)
+print(average)
+print(summmary)
+
+#print(stats(example_list)) #prints a tuple - is there a possibility to access f.e. the min only???
+
+'''
 result = list(stats(example_list))
 
 for i in range(0, len(result)):
   print(result[i])
+'''

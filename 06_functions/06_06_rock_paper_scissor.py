@@ -19,8 +19,8 @@ def get_hand(input_data):
 print("you selected: ", get_hand(user_input))
 print("computer selected: ", get_hand(computer_input))
 
-user_input = get_hand(user_input)
-computer_input = get_hand(computer_input)   #if i kill these, then tie works - but else it returns none
+#user_input = get_hand(user_input)
+#computer_input = get_hand(computer_input)   #if i kill these, then tie works - but else it returns none => variable not stored anywhere, there for none == none = tie...?
 
 def determine_winner(user_input, computer_input):
     if user_input == computer_input:
@@ -44,5 +44,5 @@ def determine_winner(user_input, computer_input):
         else:
             return "rock smashes scissor - u loose"
 
-print(determine_winner(user_input, computer_input))
+print(determine_winner(get_hand(user_input), get_hand(computer_input)))
 

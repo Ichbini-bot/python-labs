@@ -13,19 +13,15 @@ Write a script that completes the following tasks.
 data = int(input("Pls enter a number: "))
 
 def divisible_or(data):
-    if data %4 == 0 or data %7 ==0:
-        return True
-    else:
-        return False
+    return data %4 == 0 or data %7 == 0
 
 def divisible_and(data):
-    if data %4 == 0 and data %7 ==0:
-        return True
-    else:
-        return False
+    return data %4 == 0 and data %7 ==0
 
-print(divisible_or(data))
-print(divisible_and(data))
+variable_1 = (divisible_or(data))
+variable_2 = (divisible_and(data))
+
+print(variable_1, variable_2)
 
 
 

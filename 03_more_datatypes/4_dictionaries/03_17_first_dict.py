@@ -7,7 +7,7 @@ result = {1: 1, 2: 4, 3: 9, ...and so on}
 
 dictionary = dict()
 
-for entry in range(1, 10):
+for entry in range(1, 11):
     dictionary[entry] = entry**2
 
 print(dictionary)

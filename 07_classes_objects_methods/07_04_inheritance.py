@@ -13,8 +13,35 @@ CLASSES AND INHERITANCE
     instance variable called "pg" that is set by default to the number 13.
 
 5) EXTRA: If you finish early, use the time to practice flushing out these
-    classes and white-boarding code. What attributes could a Movie class
+    classes and white-boarding code. What attributes could a Movie class      ???????????
     contain? What methods? What tricks can you use through inheritance?
     Any class attributes you could add?
 
 '''
+class Movie:
+    def __init__(self, year, title):
+        self.year = year
+        self.title = title
+
+    def __str__(self):
+        return f"Year: {self.year}, title: {self.title}"
+
+class RomCom(Movie):
+    pass
+
+class ActionMovie(Movie):
+    def __init__(self, year, title, pg = 13):
+        super().__init__(year, title)
+        self.pg = pg
+
+    def __str__(self):
+        return Movie.__str__(self) + f" PG grade: {self.pg}"
+    
+
+
+action = ActionMovie(1979, "Star Wars")
+mov = Movie(1984, "1984")
+hog = RomCom (1981, "Groundhog day")
+print(mov)
+print(hog)
+print(action)

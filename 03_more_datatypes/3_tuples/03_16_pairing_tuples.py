@@ -20,24 +20,18 @@ while True:
     list.append(data)
 list.sort() 
 print("you entered the following numbers: ", list)
+print(list)
 
 x = len(list)
 if x %2 == 1:
     list.append(0)
     print("as we need an even list for this program, the value 0 hast been appended: ", list)
 
-for i in range (0, len(list), 2):
+for i in range (0, len(list)):
     tupe = tuple(list[i:i+2:1])
     print(tupe)
 
-new_list = []
 
-for i in range(0, len(list), 2):
-    sublist = []
-    sublist.append(list[i:i+2], 2)
-    new_list.append(tuple(sublist))
-
-print(new_list)
 
 '''
 for i in range (0, len(list), 2):  

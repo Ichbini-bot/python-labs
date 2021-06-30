@@ -16,3 +16,13 @@ your own for this exercise but if you are stuck, some ideas include:
 - A Restaurant superclass, with Gourmet and FastFood subclasses.
 
 '''
+
+# Will develop the logic of my online shop during the course here
+# Class Attributes
+
+class Product:
+    pass
+# sub classes:
+    #webcam covers, stickers, magnets etc.
+    #customers: differentiation retail, corporate customer, business customer (paying, placing orders etc.)
+    #distributors
