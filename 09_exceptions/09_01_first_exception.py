@@ -7,4 +7,15 @@ print(list_[1])
 
 This raises and exception that needs to be handled.
 
+out of range exception
+
 '''
+list_ = ["hello world!"]
+print(list_[0])
+
+
+try:
+    list_ = ["hello world!"]
+    print(list_[1])
+except:
+    print("index is out of range")

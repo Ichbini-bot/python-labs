@@ -7,4 +7,23 @@ the script should handle:
 
 Test it and make sure it does not crash when you enter incorrect values.
 
+value error
+zero division error
+
 '''
+
+while True:
+    try:
+        num1 = float(input("Pls enter first number: "))
+        num2 = float(input("Pls enter second number: "))
+        result = num1 / num2
+        print(f"The result of {num1} divided by {num2} is: {result}")
+        break
+    except ValueError:
+        print("Pls enter a number - not a string")
+    except ZeroDivisionError:
+        print("you cannot divide by 0")
+
+    
+
+

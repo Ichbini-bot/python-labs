@@ -6,5 +6,13 @@ with specific except statements, and continue to do the calculation
 only if neither of them applies.
 
 '''
-
-file_name = 'integers.txt'
+try:
+    with open("09_exceptions/integers.txt", "r") as num:
+        number = num.readline()
+        result = number + 5
+        print(result)
+except ValueError:
+    print("Must be number - not string")
+except IOError:
+    print("IO Error - pls handle differently")
+    
