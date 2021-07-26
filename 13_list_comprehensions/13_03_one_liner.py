@@ -9,3 +9,17 @@ for letter in 'suchalongword':
 print(letters)
 
 '''
+letters = []
+
+for letter in 'suchalongword':
+    letters.append(letter)
+
+print(letters)
+
+print("VIA LIST COMPREHENSION")
+
+def long_word():
+    let = [letter for letter in "suchalongword"]
+    return let
+
+print(long_word())
