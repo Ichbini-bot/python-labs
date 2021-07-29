@@ -6,5 +6,18 @@ and yields the element and its index
 
 '''
 
-def my_enumerate(# your arguments):
-      # pass
+list = ["apple", "pears", "kiwis", "pineapples"]
+list2 = [1,2,3,4,5,6,7,8,9,10]
+
+def my_enumerate(argument, start = 0):
+      index = start
+      for element in argument:
+            yield index, element #first time using yield. Compared to return, yiel can give back several values - however, needs to be called via a for loop (as iterator)
+            index +=1
+
+for i in my_enumerate(list):
+      print(i)
+
+for i in my_enumerate(list2):
+      print(i)
+
