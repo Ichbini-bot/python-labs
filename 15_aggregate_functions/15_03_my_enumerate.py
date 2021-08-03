@@ -7,7 +7,7 @@ and yields the element and its index
 '''
 
 list = ["apple", "pears", "kiwis", "pineapples"]
-list2 = [1,2,3,4,5,6,7,8,9,10]
+list2 = [1,2,3,4,5]
 
 def my_enumerate(argument, start = 0):
       index = start
@@ -20,4 +20,5 @@ for i in my_enumerate(list):
 
 for i in my_enumerate(list2):
       print(i)
+
 
